@@ -18,7 +18,9 @@ context('Login', () => {
           cy.get('#password')
           .should('have.value', '')
           .and('have.attr', 'placeholder', 'Password')
-          .and('be.visible')    
+          .and('be.visible')   
+          
+          //Login button
   
       })
       it('has login button', () => {
@@ -77,6 +79,8 @@ context('Login', () => {
           cy.get('#user-name')
           .type('standard_user')
           .should('have.value', 'standard_user')
+
+          
   
           cy.get('#password')
           .type('secret_sauce')
